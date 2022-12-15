@@ -15,7 +15,7 @@ class Complex:
             label = f"{self.name} = {self.real} + {self.imm}i"
         else:
             label = f"{self.name} = {self.real} - {-1 * self.imm}i"
-        plt.plot(self.real, self.imm, "ro", c=color, label=label)
+        plt.plot(self.real, self.imm, "o", c=color, label=label)
         plt.axvline(x=0, c="black")
         plt.axhline(y=0, c="black")
         plt.legend()
